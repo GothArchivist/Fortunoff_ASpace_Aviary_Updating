@@ -1,4 +1,4 @@
-SELECT title, ead_id #ao.title
+SELECT resource.title, resource.ead_id, ao.title
 ,CONCAT('/repositories/14/archival_objects/', ao.id) AS ao_uri
 ,CONCAT('/repositories/14/resources/', resource.id) AS resource_uri
 FROM resource
